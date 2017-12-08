@@ -3,7 +3,7 @@
 COUNT=`find spec -name "*Spec.js" | wc -l`
 
 if [[ "$COUNT" -gt "0" ]]; then
-  node ./lib/runner.js spec/*.js
+  node ./lib/oh-notifier.js spec/*.js
 else
   echo "No spec files found"
 fi
