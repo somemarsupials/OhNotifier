@@ -19,11 +19,11 @@ describe('Person object', function() {
       spyOn(person, 'says').and.returnValue('something');
     });
 
-    it('says in uppercase', function() {
+    it('calls #says in uppercase', function() {
       expect(person.shouts()).toEqual('SOMETHING');
     });
 
-    describe('when shouts is called', function() {
+    describe('when #shouts called', function() {
       beforeEach(function() {
         person.shouts();
       });
